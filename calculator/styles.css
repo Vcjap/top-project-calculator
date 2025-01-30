@@ -1,0 +1,72 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 0px;
+    background-color: black;
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#display{
+    background-color: lightgrey;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#inputs{
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex: 4;
+}
+
+#numbers {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex: 2.5 1 auto;
+}
+
+#operators{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+
+.operator, .number, .separator, .changer{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.row, .row > * {
+    display: flex;
+    flex: 1;
+}
+
+.operator{
+    background-color:orange;
+}
+
+.number, .separator{
+    background-color: aqua;
+}
+
+.changer {
+    background-color: aquamarine;
+}
+
+.clickDisabled {
+    pointer-events: none;
+}
