@@ -12,8 +12,10 @@ function multiply(n1,n2) {
 }
 
 function divide(n1,n2) {
-    if (n2 == 0) return "lol no";
-    return n1/n2
+    if (n2 == 0) {
+        return "lol no"
+    }
+    else return n1/n2;
 }
 
 // Values are inputed as string, so we convert them to numbers to operate on them
